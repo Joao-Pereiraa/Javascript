@@ -103,8 +103,8 @@ function checkEl(player1,player2) {
     if (b1.childNodes.length > 0 && b2.childNodes.length > 0 && b3.childNodes.length > 0) {
 
         let b1Child = b1.childNodes[0].className;
-        let b2Child = b1.childNodes[0].className;
-        let b3Child = b1.childNodes[0].className;
+        let b2Child = b2.childNodes[0].className;
+        let b3Child = b3.childNodes[0].className;
 
         if (b1Child == 'x' && b2Child == 'x' && b3Child == 'x') {
             // x
@@ -150,7 +150,7 @@ function checkEl(player1,player2) {
     }
 
       // VERTICAL
-      if (b1.childNodes.length > 0 && b4.childNodes.length > 0 && b7.childNodes.length > 0) {
+    if (b1.childNodes.length > 0 && b4.childNodes.length > 0 && b7.childNodes.length > 0) {
 
         let b1Child = b1.childNodes[0].className;
         let b4Child = b4.childNodes[0].className;
@@ -225,14 +225,15 @@ function checkEl(player1,player2) {
 
         if (b3Child == 'x' && b5Child == 'x' && b7Child == 'x') {
             // x
-            console.log('X venceu');
+            declaraWinner('X');
 
         } else if(b3Child == 'o' && b5Child == 'o' && b7Child == 'o') {
             //o
-            console.log('O venceu')
+            declaraWinner('O');
         }
-    }
 
+    }
+   
     // DEU VELHA
 
     let counter = 0;
@@ -317,8 +318,3 @@ function computerPlay() {
 if (counter == 0 && filled < 9) {
     computerPlay();
 }
-
-       
-
-
-
