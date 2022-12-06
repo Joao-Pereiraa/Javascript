@@ -1,0 +1,13 @@
+Job Finder.
+
+Projeto Web sendo um site para achar vagas de emprego.
+
+Uso:
+
+HTML
+CSS
+Javascript
+Node
+Express
+Sequelize
+handlebars
