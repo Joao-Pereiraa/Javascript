@@ -245,7 +245,8 @@ function checkEl(player1,player2) {
     }
 
     if (counter == 9) {
-        console.log('deu velha');
+       declaraWinner('deu velha')
+
     }
 }
 
