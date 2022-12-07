@@ -11,3 +11,4 @@ Node
 Express
 Sequelize
 handlebars
+Sqlite
